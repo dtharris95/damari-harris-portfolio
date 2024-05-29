@@ -9,8 +9,8 @@ function BasicExample() {
       {/* <Card style={{ width: "100%" }}> */}
       <Card.Img variant="top" src={comingSoon} />
       <Card.Body>
-        <Card.Title>Harris Kitchen Table</Card.Title>
-        <Card.Text>
+        <Card.Title className="card-title">Harris Kitchen Table</Card.Title>
+        <Card.Text className="card-text">
           Template website serving as proof-of-concept for potential freelance
           restaurant clients.
         </Card.Text>
