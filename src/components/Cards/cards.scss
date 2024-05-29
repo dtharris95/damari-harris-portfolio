@@ -2,14 +2,29 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
+    // justify-content: center;
+    // width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.card-title {
     justify-content: center;
-    width: 95%;
+}
+
+.card-text {
+    // display: flex;
+    // flex-wrap: nowrap;
+    // justify-content: center;
+    // width: 75%;
+    // padding-left: 5px;
+    // padding-right: 5px;
 }
 
 @media screen and (max-width: 660px) {
     .card-container {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         text-align: center;
         justify-content: center;
     }
