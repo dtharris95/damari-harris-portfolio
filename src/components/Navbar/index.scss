@@ -1,0 +1,37 @@
+.nav-bar {
+    position: absolute;
+    background: darkred;
+    height: 100px;
+    width: 100%;
+    min-width: 500px;
+    
+    h1 {
+        font-size: 40px;
+        position: absolute;
+        padding: 0 20px;
+        font-family: 'Luckiest Guy', cursive;
+        font-weight: lighter;
+    }
+
+    ul {
+        height: 100%;
+        text-align: right;
+        list-style: none;
+        position: relative;
+
+        li {
+            a {
+                font-size: 25px;
+                padding: 10px;
+        
+                &:hover svg {
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+body {
+    background-color: rgba(245, 245, 245, 0.479);
+}

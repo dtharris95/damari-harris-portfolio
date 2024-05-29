@@ -1,0 +1,132 @@
+.container-home {
+        position: absolute;
+        top: 10%;
+        // left: 25px;
+        margin: 25px;
+        width: 90%;
+        overflow: hidden;
+
+        .logo-caption {
+            font-size: 15px;
+        }
+
+        .main-header {
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            font-weight: lighter;
+            font-size: 105px;
+        }
+
+        // language and framework icon formatting
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            font-size: 55px;
+            text-align: center;
+            animation: fadeIn 3s;
+            :hover {
+                color: darkred;
+            }
+        }
+
+        // project formatting
+        .grid-container-2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            font-size: 35px;
+
+                p {
+                    text-align: center;
+            }
+        }
+
+        h1 {
+            color: black;
+            // font-size: 105px;
+        }
+
+        h2 {
+            font-family: 'Luckiest Guy', cursive;
+            font-weight: lighter;
+            text-align: center;
+            font-size: 56px;
+        }
+
+        p {
+            text-align: center;
+            animation-name: slidein;
+            animation-duration: 3s;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        .info-text {
+            font-size: 28px;
+        }
+
+        .intro-text {
+            font-family: 'Luckiest Guy', cursive;
+            font-weight: lighter;
+            font-size: 45px;
+        }
+
+        // .project-list {
+        //     width: 50%;
+        //     position: relative;
+        // }
+
+        ul {
+            li {
+                list-style: none;
+
+                a {
+                    color: black;
+                }
+                    
+                    &:hover {
+                        color: darkred;
+                    }
+                }
+            }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me {
+    
+}
+
+@media screen and (max-width: 660px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-home {
+        width: 75%
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 25px;
+    }
+
+    .main-header {
+        font-size: 55px;
+    }
+}
