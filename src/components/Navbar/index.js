@@ -1,17 +1,15 @@
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import {
-  faContactBook,
-  faContactCard,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <div className="nav-bar">
-      <h1>Damari Harris</h1>
+    <nav className="nav-bar">
+      <h1 className="nav-title">Damari Harris</h1>
       <ul>
-        <li>
+        <li className="nav-links">
+          LinkedIn
           <a
             target="_blank"
             rel="noreferrer"
@@ -20,7 +18,8 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faLinkedin} color="black" />
           </a>
         </li>
-        <li>
+        <li className="nav-links">
+          GitHub
           <a
             target="_blank"
             rel="noreferrer"
@@ -29,13 +28,23 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faGithub} color="black" />
           </a>
         </li>
+        <li className="nav-links">
+          dtharris95@gmail.com
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:dtharris95@gmail.com"
+          >
+            <FontAwesomeIcon icon={faEnvelope} color="black" />
+          </a>
+        </li>
         {/* <li>
                 <a target='_blank' rel='noreferrer' href="" aria-label="">
                     <FontAwesomeIcon icon={faContactBook} color="black" />
                 </a>
             </li> */}
       </ul>
-    </div>
+    </nav>
   );
 };
 
