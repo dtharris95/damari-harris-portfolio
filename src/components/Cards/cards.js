@@ -19,7 +19,9 @@ function BasicExample() {
               Template website serving as proof-of-concept for potential
               freelance restaurant clients.
             </Card.Text>
-            <Card.Text>React | JavaScript | HTML | CSS | PocketBase</Card.Text>
+            <Card.Text className="card-skills">
+              React | JavaScript | HTML | CSS | PocketBase
+            </Card.Text>
             {/* <Button variant="primary">Visit Site</Button> */}
           </Card.Body>
 
@@ -32,12 +34,12 @@ function BasicExample() {
           </a>
           <Card.Body>
             <Card.Title>Budget Builder</Card.Title>
-            <Card.Text>
+            <Card.Text className="card-text">
               {" "}
               A user-friendly web application where users can budget and track
               monthly income, expenses, and disrectionary spending.
             </Card.Text>
-            <Card.Text>C# | .NET</Card.Text>
+            <Card.Text className="card-skills">C# | .NET</Card.Text>
             {/* <Button variant="primary">Visit Site</Button> */}
           </Card.Body>
 
@@ -50,12 +52,14 @@ function BasicExample() {
           </a>
           <Card.Body>
             <Card.Title>Wedding / Registry Site</Card.Title>
-            <Card.Text>
+            <Card.Text className="card-text">
               {" "}
               A website where guests can find information, RSVP, and view the
               registry for my wedding!
             </Card.Text>
-            <Card.Text>WordPress | PHP | MySQL</Card.Text>
+            <Card.Text className="card-skills">
+              WordPress | PHP | MySQL
+            </Card.Text>
             {/* <Button variant="primary">Visit Site</Button> */}
           </Card.Body>
 
@@ -68,11 +72,12 @@ function BasicExample() {
           </a>
           <Card.Body>
             <Card.Title>Veterinarian Site</Card.Title>
-            <Card.Text>
+            <Card.Text className="card-text">
               {" "}
               Template website serving as proof-of-concept for potential
               freelance veterinarian clients.
             </Card.Text>
+            <Card.Text className="card-skills">TBD</Card.Text>
             {/* <Button variant="primary">Visit Site</Button> */}
           </Card.Body>
           {/* </Card> */}

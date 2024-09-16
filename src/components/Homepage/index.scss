@@ -1,20 +1,24 @@
 .container-home {
         position: absolute;
-        // top: 10%;
         overflow: hidden;
-        justify-content: center;
-        // width: 75%;
-}
-
-.logo-caption {
-    font-size: 15px;
+        padding: 0 20%;
 }
 
 .main-header {
     text-align: center;
     font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
     font-size: 105px;
+}
+
+.about-section, .skills-section, .facts-section, .project-section {
+    // padding-bottom: 50px;
+    text-align: center;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
 }
 
 .about-me, .facts-heading, .project-heading, .skills-heading {
@@ -22,42 +26,40 @@
     font-weight: lighter;
     text-align: center;
     font-size: 56px;
-    // margin: 50px;
-    // padding: 50px;
+}
+
+.info-text {
+    font-size: 28px;
+    padding: 5px;
+}
+
+.skills-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.skills-text:hover {
+    color: darkred;
+}
+
+.intro-text {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-size: 45px;
 }
 
 .resume-link {
     color: darkred;
 }
 
-// language and framework icon formatting
-.grid-container {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 35px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto auto auto;
-    // font-size: 55px;
-    text-align: center;
-    animation: fadeIn 3s;
-    :hover {
-        color: darkred;
-    }
-}
-
-// project formatting
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    font-size: 35px;
-
-        p {
-            text-align: center;
-    }
+.vacation-img {
+    // margin: auto;
+    margin-top: 10%;
 }
 
 .personal-img {
-    // justify-content: center;
+    
 }
 
 .personalimg-container {
@@ -66,23 +68,16 @@
     max-width: fit-content;
 }
 
-// h1 {
-//     color: black;
-//     // font-size: 105px;
+.image-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+// p {
+//     text-align: center;
+//     animation-name: slidein;
+//     animation-duration: 3s;
 // }
-
-h2 {
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 56px;
-}
-
-p {
-    text-align: center;
-    animation-name: slidein;
-    animation-duration: 3s;
-}
 
 // @keyframes slidein {
 //     from {
@@ -95,21 +90,6 @@ p {
 //         width: 100%;
 //     }
 // }
-
-.info-text {
-    font-size: 28px;
-}
-
-.skills-text {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 25px;
-}
-
-.intro-text {
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
-    font-size: 45px;
-}
 
 ul {
     li {
@@ -125,10 +105,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.about-section {
-    padding: 0 20%;
-}
-
 @media screen and (max-width: 576px) {
     body {
         margin: 0;
@@ -141,27 +117,37 @@ body {
     }
 
     .main-header {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .container-home {
-        width: 90%;
+        width: 80%;
     }
 
-    .about-me {
-        font-size: 30px;
+    .about-section, .skills-section, .facts-section, .project-section {
+        // padding-bottom: 15px;
     }
 
-    .about-section {
-        // width: 80%;
+    .about-me, .facts-heading, .project-heading, .skills-heading {
+        font-size: 45px;
     }
 
     .info-text {
         font-size: 20px;
     }
 
+    .skill-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        list-style: none;
+    }
+
     .skills-text {
         font-size: 20px;
+    }
+
+    .skills-text:hover {
+        color: darkred;
     }
 
     .grid-container {
@@ -173,8 +159,15 @@ body {
 
     }
 
-    .personalimg {
-        width: 100%;
+    .graduate-img, .officiant-img {
+        // width: 100%;
+        width: 75%;
+
+    }
+
+    .vacation-img {
+        width: 75%;
+        margin-top: 2px;
     }
     
     .personalimg-container {
@@ -182,5 +175,12 @@ body {
         // margin-right: auto;
         // margin: auto;
         // max-width: fit-content;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        justify-content: center;
     }
 }
