@@ -29,11 +29,11 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-links">
-          dtharris95@gmail.com
+          dharris.webdev@gmail.com
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:dtharris95@gmail.com"
+            href="mailto:dharris.webdev@gmail.com"
           >
             <FontAwesomeIcon icon={faEnvelope} color="black" />
           </a>

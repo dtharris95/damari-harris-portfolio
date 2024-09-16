@@ -10,8 +10,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 import "animate.css";
-import Damari10 from "../../assets/images/Damari10.png";
-import Damarimobile from "../../assets/images/Damarimobile.png";
+import officiant from "../../assets/images/officiant.png";
+import vacation from "../../assets/images/vacation.png";
+import graduate from "../../assets/images/graduate.png";
 import DamariHarrisResume2024 from "../../assets/resume/DamariHarrisResume2024.pdf";
 import Accordion from "../Accordion/accordion";
 import Cards from "../Cards/cards";
@@ -26,8 +27,30 @@ const Homepage = () => {
         <div className="about-section">
           <h2 className="about-me">About Me</h2>
 
-          <div className="personalimg-container">
-            <img className="personalimg" src={Damari10}></img>
+          <div className="image-container">
+            <div className="personalimg-container">
+              <img
+                aria-label="Officiant of a wedding"
+                className="officiant-img"
+                src={officiant}
+              ></img>
+            </div>
+            <div>
+              <img
+                aria-label="On vacation"
+                className="vacation-img"
+                // height="450px"
+                // width="450px"
+                src={vacation}
+              ></img>
+            </div>
+            <div>
+              <img
+                aria-label="Graduate"
+                className="graduate-img"
+                src={graduate}
+              ></img>
+            </div>
           </div>
 
           <p className="info-text">
@@ -39,7 +62,6 @@ const Homepage = () => {
             Science from Columbus State Community College, specializing in Web
             Development.
           </p>
-          <p className="info-text"></p>
           <p className="info-text">
             I have enjoyed my 5 years in my current role with Amazon. Now, I
             look forward to my next opportunity in the field of Web and Software
@@ -47,43 +69,53 @@ const Homepage = () => {
           </p>
           <p className="info-text">
             <a className="resume-link" href={DamariHarrisResume2024}>
-              Check out my resume here!
+              Check out my resume!
             </a>
           </p>
+        </div>
 
+        <div className="skills-section">
           <h2 className="skills-heading">Skills</h2>
-          <div className="">
-            <p className="skills-text">JAVASCRIPT</p>
-            <p className="skills-text">REACT</p>
-            <p className="skills-text">C#</p>
-            <p className="skills-text">.NET</p>
-            <p className="skills-text">HTML</p>
-            <p className="skills-text">CSS</p>
-            <p className="skills-text">BOOTSTRAP</p>
-            <p className="skills-text">GIT</p>
+          <div className="skill-list">
+            <li className="skills-text">JAVASCRIPT</li>
+            <li className="skills-text">HTML</li>
+            <li className="skills-text">C#</li>
+            <li className="skills-text">GIT</li>
+            <li className="skills-text">REACT</li>
+            <li className="skills-text">CSS</li>
+            <li className="skills-text">.NET</li>
+            <li className="skills-text">BOOTSTRAP</li>
           </div>
+        </div>
 
+        <div className="facts-section">
           <h2 className="facts-heading">Fun Facts!</h2>
           <p className="info-text">
-            I am a proud 2018 graduate of The Ohio State University, earning my
-            Bachelor of Science in Education, majoring in Sport Industry. Go
+            I am a proud 2018 graduate of The Ohio State University - earned my
+            Bachelor of Science in Education, majored in Sport Industry. Go
             Bucks!
           </p>
           <p className="info-text">
-            I previously attended The Ohio State University where I earned my BS
-            in Sport Industry (Business Minor) - GO BUCKS!
+            I have officiated a wedding! My best friend got married in Hawaii in
+            May 2024, and bestowed the honor upon me of asking to be his
+            officiant!
           </p>
           <p className="info-text">
-            I have been very fortunate to travel to the Bahamas and the Cayman
-            Islands!
+            I have been very fortunate to travel abroad - I have been to the
+            Bahamas and the Cayman Islands! I look forward to seeing where my
+            future travels will take me.
           </p>
         </div>
-        <br></br>
 
-        <h2 className="project-heading">Projects</h2>
-        <div>
+        <div className="project-section">
+          <h2 className="project-heading">Projects</h2>
           <Cards />
         </div>
+
+        {/* <h2 className="project-heading">Projects</h2>
+        <div>
+          <Cards />
+        </div> */}
       </div>
     </div>
   );
