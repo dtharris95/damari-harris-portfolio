@@ -61,6 +61,12 @@ const Homepage = () => {
             Development!
           </p>
           <p className="info-text">
+            Potential employers, please use: dtharris95@gmail.com
+          </p>
+          <p className="info-text">
+            For freelance inquiries: dharris.webdev@gmail.com{" "}
+          </p>
+          <p className="info-text">
             <a className="resume-link" href={DamariHarrisResume2024}>
               Check out my resume!
             </a>
