@@ -57,9 +57,7 @@ function BasicExample() {
               A website where guests can find information, RSVP, and view the
               registry for my wedding!
             </Card.Text>
-            <Card.Text className="card-skills">
-              WordPress | PHP | MySQL
-            </Card.Text>
+            <Card.Text className="card-skills">WordPress</Card.Text>
             {/* <Button variant="primary">Visit Site</Button> */}
           </Card.Body>
 

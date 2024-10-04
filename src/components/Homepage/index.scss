@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 .container-home {
-        position: absolute;
-        overflow: hidden;
-        padding: 0 20%;
+    position: absolute;
+    overflow: hidden;
+    padding: 0 15%;
 }
 
 .main-header {
@@ -10,8 +14,20 @@
     font-size: 105px;
 }
 
+.header-container {
+    padding-top: 5%;
+    // padding-bottom: 25%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 .about-section, .skills-section, .facts-section, .project-section {
-    // padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -40,7 +56,7 @@
 }
 
 .skills-text:hover {
-    color: darkred;
+    color: tan;
 }
 
 .intro-text {
@@ -50,12 +66,12 @@
 }
 
 .resume-link {
-    color: darkred;
+    color: tan;
 }
 
 .vacation-img {
     // margin: auto;
-    margin-top: 10%;
+    // margin-top: 10%;
 }
 
 .personal-img {
@@ -69,8 +85,8 @@
 }
 
 .image-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    // display: grid;
+    // grid-template-columns: auto auto auto;
 }
 
 // p {
@@ -117,11 +133,18 @@ body {
     }
 
     .main-header {
-        font-size: 60px;
+        font-size: 40px;
+        align-items: center;
+    }
+
+    .header-container {
+        padding-top: 100%;
+        padding-bottom: 100%;
     }
 
     .container-home {
         width: 80%;
+        padding: 0 5%;
     }
 
     .about-section, .skills-section, .facts-section, .project-section {

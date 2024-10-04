@@ -6,7 +6,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <nav className="nav-bar">
-      <h1 className="nav-title">Damari Harris</h1>
+      <div className="title-container">
+        <h1 className="nav-title">Damari Harris</h1>
+      </div>
       <ul>
         <li className="nav-links">
           LinkedIn
