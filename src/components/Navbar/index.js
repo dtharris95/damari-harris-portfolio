@@ -1,7 +1,7 @@
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -31,7 +31,17 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-links">
-          dharris.webdev@gmail.com
+          Employers
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:dharris.webdev@gmail.com"
+          >
+            <FontAwesomeIcon icon={faBriefcase} color="black" />
+          </a>
+        </li>
+        <li className="nav-links">
+          Freelance Clients
           <a
             target="_blank"
             rel="noreferrer"
