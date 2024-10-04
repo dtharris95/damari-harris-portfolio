@@ -1,10 +1,11 @@
+body {
+    margin: 0;
+    background-color: rgba(245, 245, 245, 0.479);
+}
+
 .nav-bar {
     overflow: hidden;
-    // position: absolute;
-    background: darkred;
-    // height: 100px;
-    width: 100%;
-    // min-width: 500px;
+    background: tan;
     
     h1 {
         position: absolute;
@@ -37,17 +38,11 @@
 
 .nav-title {
     font-size: 35px;
-    display: flex;
-    flex-wrap: nowrap;
     margin: 30px 2px;
 }
 
 .nav-links {
     
-}
-
-body {
-    background-color: rgba(245, 245, 245, 0.479);
 }
 
 @media screen and (max-width: 576px) {
@@ -56,6 +51,7 @@ body {
     }
 
     .nav-bar {
+        overflow: hidden;
         display: flex;
         flex-direction: column;
     }

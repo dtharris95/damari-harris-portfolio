@@ -1,13 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {} from "@fortawesome/free-solid-svg-icons";
-import {
-  faBootstrap,
-  faCss3,
-  faGit,
-  faHtml5,
-  faJs,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 import "animate.css";
 import officiant from "../../assets/images/officiant.png";
@@ -21,20 +13,21 @@ const Homepage = () => {
   return (
     <div className="flex-container">
       <div className="container-home">
-        <h1 className="main-header">Damari Harris Portfolio</h1>
+        <div className="header-container">
+          <h1 className="main-header">It's Very Nice to Meet You.</h1>
+        </div>
 
-        {/* <Accordion /> */}
         <div className="about-section">
           <h2 className="about-me">About Me</h2>
 
           <div className="image-container">
-            <div className="personalimg-container">
+            {/* <div className="personalimg-container">
               <img
                 aria-label="Officiant of a wedding"
                 className="officiant-img"
                 src={officiant}
               ></img>
-            </div>
+            </div> */}
             <div>
               <img
                 aria-label="On vacation"
@@ -44,13 +37,13 @@ const Homepage = () => {
                 src={vacation}
               ></img>
             </div>
-            <div>
+            {/* <div>
               <img
                 aria-label="Graduate"
                 className="graduate-img"
                 src={graduate}
               ></img>
-            </div>
+            </div> */}
           </div>
 
           <p className="info-text">

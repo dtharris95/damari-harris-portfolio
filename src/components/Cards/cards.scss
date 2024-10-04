@@ -10,6 +10,7 @@
 }
 
 .card-title {
+    font-size: 23px;
     justify-content: center;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .card-skills:hover {
-    color: darkred;
+    color: tan;
 }
 
 @media screen and (max-width: 576px) {
@@ -57,7 +58,7 @@
     }
 
     .card-skills:hover {
-        color: darkred;
+        color: tan;
     }
     
 }
