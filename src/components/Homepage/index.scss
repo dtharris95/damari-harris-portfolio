@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .container-home {
     position: absolute;
     overflow: hidden;
@@ -26,8 +30,7 @@
 }
 
 .about-section, .skills-section, .facts-section, .project-section {
-    // padding-top: 100px;
-    // padding-bottom: 100px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
@@ -35,6 +38,17 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     list-style: none;
+    border: white 2px solid;
+    border-radius: 75px;
+    background-color: tan;
+    padding: 50px;
+}
+
+.facts-container, .info-container {
+    padding: 50px;
+    border: white 2px solid;
+    background-color: lightgray;
+    border-radius: 75px;
 }
 
 .about-me, .facts-heading, .project-heading, .skills-heading {
@@ -56,7 +70,7 @@
 }
 
 .skills-text:hover {
-    color: tan;
+    color: white;
 }
 
 .intro-text {
@@ -66,25 +80,21 @@
 }
 
 .resume-link {
-    color: tan;
-}
+    font-size: 35px;
+    font-family: 'Luckiest Guy', cursive;
+    color: black;
 
-.vacation-img {
-    // margin: auto;
-    // margin-top: 10%;
-}
-
-.personal-img {
-    
-}
-
-.personalimg-container {
-    max-width: fit-content;
+    &:hover {
+        color: tan;
+    }
 }
 
 .image-container {
-    // display: grid;
-    // grid-template-columns: auto auto auto;
+    padding-bottom: 50px;
+}
+
+.vacation-img {
+    border-radius: 25px;
 }
 
 // p {
@@ -96,7 +106,7 @@
 // @keyframes slidein {
 //     from {
 //         margin-left: 100%;
-//         width: 300%;
+//         width: 100%;
 //     }
 
 //     to {
@@ -114,10 +124,6 @@ ul {
             }
         }
     }
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 @media screen and (max-width: 576px) {
     body {
@@ -146,7 +152,7 @@ body {
     }
 
     .about-section, .skills-section, .facts-section, .project-section {
-        // padding-bottom: 15px;
+        padding-bottom: 15px;
     }
 
     .about-me, .facts-heading, .project-heading, .skills-heading {
@@ -158,46 +164,22 @@ body {
     }
 
     .skill-list {
+        margin: auto;
+        justify-content: center;
         display: grid;
         grid-template-columns: auto auto;
-        list-style: none;
     }
 
     .skills-text {
         font-size: 20px;
     }
 
-    .skills-text:hover {
-        color: tan;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: grid;
-    }
-
-    .grid-container-2 {
-
-    }
-
-    .graduate-img, .officiant-img {
-        // width: 100%;
-        width: 75%;
-
-    }
-
     .vacation-img {
-        width: 75%;
-        margin-top: 2px;
+        width: 80%;
+        margin: auto;
+        border-radius: 25%;
     }
     
-    .personalimg-container {
-        // margin-left: auto;
-        // margin-right: auto;
-        // margin: auto;
-        // max-width: fit-content;
-    }
-
     .image-container {
         display: grid;
         grid-template-columns: auto;
