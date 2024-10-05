@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(245, 245, 245, 0.479);
+}
+
+.navbar {
+    overflow: hidden;
+    background: tan;
+    // height: 100px;
+
+    icon {
+        float: right;
+    }
+
+    ul {
+        padding-top: 1%;
+        position: relative;
+        margin: auto;
+        text-align: right;
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+        float: right;
+
+        li {
+            align-items: right;
+            a {
+                font-size: 20px;
+                padding: 7px;
+                margin: 7px;
+                // margin-right: 0.5%;
+        
+                &:hover svg {
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+.nav-title {
+    font-size: 35px;
+    float: left;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    padding-left: 1%;
+}
+
+.nav-links {
+    
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        margin: 0;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background: tan;
+
+        ul {
+            padding-top: 1%;
+            position: relative;
+            margin: auto;
+            text-align: right;
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            float: right;
+        }
+    }
+
+    .nav-title {
+        font-size: 23px;
+        padding-top: 2%;
+    }
+
+    .nav-links {
+        font-size: 12px
+    }
+
+    a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+}
