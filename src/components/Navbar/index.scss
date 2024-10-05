@@ -16,7 +16,7 @@ body {
     }
 
     ul {
-        padding-top: 1%;
+        padding-top: 0.5%;
         position: relative;
         margin: auto;
         text-align: right;
@@ -62,32 +62,31 @@ body {
     .navbar {
         overflow: hidden;
         background: tan;
+        display: grid;
+        grid-template-columns: auto;
 
         ul {
-            padding-top: 1%;
-            position: relative;
+            // padding-top: 1%;
+            // position: relative;
             margin: auto;
-            text-align: right;
+            text-align: left;
             list-style: none;
-            display: grid;
-            grid-template-columns: auto auto;
+            display: flex;
+            // display: grid;
+            // grid-template-columns: auto auto;
             gap: 10px;
-            float: right;
         }
     }
 
     .nav-title {
         font-size: 23px;
         padding-top: 2%;
+        margin: auto;
+        padding-bottom: 2%;
     }
 
     .nav-links {
-        font-size: 12px
-    }
-
-    a {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 10px
     }
 
 }
