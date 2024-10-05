@@ -67,17 +67,18 @@ body {
             padding-top: 1%;
             position: relative;
             margin: auto;
-            text-align: right;
+            text-align: center;
             list-style: none;
-            display: grid;
-            grid-template-columns: auto auto;
+            display: flex;
+            // display: grid;
+            // grid-template-columns: auto auto;
             gap: 10px;
-            float: right;
+            // float: center;
         }
     }
 
     .nav-title {
-        font-size: 23px;
+        ////font-size: 23px;
         padding-top: 2%;
     }
 
