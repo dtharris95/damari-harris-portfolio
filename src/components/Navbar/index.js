@@ -35,7 +35,7 @@ const Navbar = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:dharris.webdev@gmail.com"
+            href="mailto:dtharris95@gmail.com"
           >
             <FontAwesomeIcon icon={faBriefcase} color="black" />
           </a>
