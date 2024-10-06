@@ -35,7 +35,7 @@ body {
                 // margin-right: 0.5%;
         
                 &:hover svg {
-                    color: gray;
+                    color: white;
                 }
             }
         }
@@ -54,33 +54,31 @@ body {
     
 }
 
+// Mobile Phone
 @media screen and (max-width: 576px) {
     body {
-        margin: 0;
+        // margin: 0;
     }
 
     .navbar {
         overflow: hidden;
         background: tan;
-        display: grid;
-        grid-template-columns: auto;
+        // display: grid;
+        // grid-template-columns: auto;
 
         ul {
-            // padding-top: 1%;
-            // position: relative;
             margin: auto;
             text-align: left;
             list-style: none;
-            display: flex;
-            // display: grid;
-            // grid-template-columns: auto auto;
+            // display: flex;
             gap: 10px;
+            width: 50%;
         }
     }
 
     .nav-title {
-        font-size: 23px;
-        padding-top: 2%;
+        font-size: 25px;
+        padding-top: 12%;
         margin: auto;
         padding-bottom: 2%;
     }
@@ -89,4 +87,18 @@ body {
         font-size: 10px
     }
 
+}
+
+// Tablet
+@media screen and (max-width: 835px) {
+    .nav-links {
+        padding-top: 4%;
+    }
+}
+
+// Laptop
+@media screen and (max-width: 1280px) {
+    .nav-links {
+        padding-top: 4%;
+    }
 }
