@@ -1,10 +1,7 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {} from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import "animate.css";
-// import officiant from "../../assets/images/officiant.png";
 import vacation from "../../assets/images/vacation.png";
-// import graduate from "../../assets/images/graduate.png";
 import DamariHarrisResume2024 from "../../assets/resume/DamariHarrisResume2024.pdf";
 import Cards from "../Cards/cards";
 
@@ -13,19 +10,27 @@ const Homepage = () => {
     <div className="flex-container">
       <div className="container-home">
         <div className="header-container">
-          <h1 className="main-header">It's Very Nice to Meet You.</h1>
+          <h1 className="main-header">Hey, I'm Damari</h1>
+        </div>
+
+        <div className="image-container">
+          <img
+            aria-label="On vacation"
+            className="vacation-img"
+            src={vacation}
+          ></img>
         </div>
 
         <div className="about-section">
           <h2 className="about-me">About Me</h2>
 
-          <div className="image-container">
+          {/* <div className="image-container">
             <img
               aria-label="On vacation"
               className="vacation-img"
               src={vacation}
             ></img>
-          </div>
+          </div> */}
 
           <div className="info-container">
             <p className="info-text">

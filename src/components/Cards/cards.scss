@@ -64,3 +64,18 @@
     }
     
 }
+
+// Tablet
+@media screen and (max-width: 835px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+// Laptop
+@media screen and (max-width: 1280px) {
+    
+}
+}

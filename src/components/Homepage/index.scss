@@ -85,12 +85,14 @@ body {
     color: black;
 
     &:hover {
-        color: tan;
+        color: white;
     }
 }
 
 .image-container {
-    padding-bottom: 50px;
+    // padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
 }
 
 .vacation-img {
@@ -142,13 +144,13 @@ ul {
     }
 
     .header-container {
-        padding-top: 100%;
-        padding-bottom: 100%;
+        padding-top: 10%;
+        padding-bottom: 5%;
     }
 
     .container-home {
-        width: 80%;
-        padding: 0 5%;
+        width: 95%;
+        padding: 0 2%;
     }
 
     .about-section, .skills-section, .facts-section, .project-section {
@@ -185,5 +187,21 @@ ul {
         grid-template-columns: auto;
         margin: auto;
         justify-content: center;
+    }
+}
+
+// Tablet
+@media screen and (max-width: 835px) {
+    .container-home {
+        padding: 0 35%;
+        width: 85%;
+    }
+}
+
+// Laptop
+@media screen and (max-width: 1280px) {
+    .container-home {
+        padding: 0 5%;
+        width: 90%;
     }
 }
