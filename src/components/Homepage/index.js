@@ -16,16 +16,24 @@ const Homepage = () => {
           <h1 className="main-header">It's Very Nice to Meet You.</h1>
         </div>
 
+        <div className="image-container">
+          <img
+            aria-label="On vacation"
+            className="vacation-img"
+            src={vacation}
+          ></img>
+        </div>
+
         <div className="about-section">
           <h2 className="about-me">About Me</h2>
 
-          <div className="image-container">
+          {/* <div className="image-container">
             <img
               aria-label="On vacation"
               className="vacation-img"
               src={vacation}
             ></img>
-          </div>
+          </div> */}
 
           <div className="info-container">
             <p className="info-text">
