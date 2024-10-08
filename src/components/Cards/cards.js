@@ -7,6 +7,10 @@ import HKTIcon from "../../assets/images/HKTIcon.png";
 function BasicExample() {
   return (
     <>
+      <h2 className="project-heading">Projects</h2>
+      <p className="project-subheading">
+        (Click on an image to see the project!)
+      </p>
       <div className="flex-container">
         <div className="card-container">
           {/* Harris Kitchen Table */}
