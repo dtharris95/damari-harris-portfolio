@@ -1,35 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: rgba(245, 245, 245, 0.479);
 }
 
-.nav-bar {
+.navbar {
     overflow: hidden;
     background: tan;
-    
-    h1 {
-        position: absolute;
-        padding: 0 20px;
-        font-family: 'Luckiest Guy', cursive;
-        font-weight: lighter;
+
+    icon {
+        float: right;
     }
 
     ul {
-        height: 100%;
+        padding-top: 0.5%;
+        position: relative;
+        margin: auto;
         text-align: right;
         list-style: none;
-        position: relative;
-        margin-right: 2%;
-        margin: 3px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+        float: right;
 
         li {
+            align-items: right;
             a {
                 font-size: 20px;
-                padding: 10px;
-                margin-right: 0.5%;
+                padding: 7px;
+                margin: 7px;
+                // margin-right: 0.5%;
         
                 &:hover svg {
-                    color: gray;
+                    color: white;
                 }
             }
         }
@@ -38,49 +44,62 @@ body {
 
 .nav-title {
     font-size: 35px;
-    margin: 45px 2px;
+    float: left;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    padding-left: 1%;
 }
 
 .nav-links {
-    
+    text-align: center;
 }
 
+// Mobile Phone
 @media screen and (max-width: 576px) {
     body {
-        margin: 0;
+        // margin: 0;
     }
 
-    .nav-bar {
+    .navbar {
         overflow: hidden;
-        display: flex;
-        flex-direction: column;
+        background: tan;
+        // display: grid;
+        // grid-template-columns: auto;
+
+        ul {
+            margin: auto;
+            text-align: left;
+            list-style: none;
+            // display: flex;
+            gap: 2px;
+            width: 51%;
+        }
     }
 
     .nav-title {
-        font-size: 23px;
-        margin: 37px 2px;
-        // width: 10%;
+        font-size: 25px;
+        padding-top: 12%;
+        margin: auto;
+        padding-bottom: 2%;
+        display: grid;
     }
 
     .nav-links {
         font-size: 10px;
     }
 
-    ul {
-        height: 100%;
-        text-align: right;
-        list-style: none;
-        position: relative;
-        margin-right: 3%;
-    }
+}
 
-    a {
-        font-size: 20px;
-        padding: 10px;
+// Tablet
+@media screen and (max-width: 835px) {
+    .nav-links {
+        padding-top: 4%;
     }
+}
 
-    a:hover svg {
-        color: gray;
+// Laptop
+@media screen and (max-width: 1280px) {
+    .nav-links {
+        padding-top: 4%;
     }
-
 }

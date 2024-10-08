@@ -5,11 +5,10 @@ import { faEnvelope, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="nav-bar">
-      <div className="title-container">
-        <h1 className="nav-title">Damari Harris</h1>
-      </div>
+    <nav className="navbar">
+      <h1 className="nav-title">Damari Harris</h1>
       <ul>
+        {/* <div className="hello"> */}
         <li className="nav-links">
           LinkedIn
           <a
@@ -35,13 +34,13 @@ const Navbar = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:dharris.webdev@gmail.com"
+            href="mailto:dtharris95@gmail.com"
           >
             <FontAwesomeIcon icon={faBriefcase} color="black" />
           </a>
         </li>
         <li className="nav-links">
-          Freelance Clients
+          Freelance
           <a
             target="_blank"
             rel="noreferrer"
@@ -50,6 +49,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faEnvelope} color="black" />
           </a>
         </li>
+        {/* </div> */}
         {/* <li>
                 <a target='_blank' rel='noreferrer' href="" aria-label="">
                     <FontAwesomeIcon icon={faContactBook} color="black" />

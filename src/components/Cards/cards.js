@@ -7,9 +7,13 @@ import HKTIcon from "../../assets/images/HKTIcon.png";
 function BasicExample() {
   return (
     <>
+      <h2 className="project-heading">Projects</h2>
+      <p className="project-subheading">
+        (Click on an image to see the project!)
+      </p>
       <div className="flex-container">
         <div className="card-container">
-          {/* <Card style={{ width: "100%" }}> */}
+          {/* Harris Kitchen Table */}
           <a href="https://harriskitchentable.com">
             <Card.Img variant="top" className="project-images" src={HKTIcon} />
           </a>
@@ -25,6 +29,26 @@ function BasicExample() {
             {/* <Button variant="primary">Visit Site</Button> */}
           </Card.Body>
 
+          {/* Hinge To Harris - https://hingetoharris.com */}
+          <a href="">
+            <Card.Img
+              variant="top"
+              className="project-images"
+              src={comingSoon}
+            />
+          </a>
+          <Card.Body>
+            <Card.Title>Hinge To Harris</Card.Title>
+            <Card.Text className="card-text">
+              {" "}
+              A website where guests can find information, RSVP, and view the
+              registry for my wedding!
+            </Card.Text>
+            <Card.Text className="card-skills">WordPress</Card.Text>
+            {/* <Button variant="primary">Visit Site</Button> */}
+          </Card.Body>
+
+          {/* Budget Builder */}
           <a href="">
             <Card.Img
               variant="top"
@@ -43,24 +67,7 @@ function BasicExample() {
             {/* <Button variant="primary">Visit Site</Button> */}
           </Card.Body>
 
-          <a href="">
-            <Card.Img
-              variant="top"
-              className="project-images"
-              src={comingSoon}
-            />
-          </a>
-          <Card.Body>
-            <Card.Title>Wedding / Registry Site</Card.Title>
-            <Card.Text className="card-text">
-              {" "}
-              A website where guests can find information, RSVP, and view the
-              registry for my wedding!
-            </Card.Text>
-            <Card.Text className="card-skills">WordPress</Card.Text>
-            {/* <Button variant="primary">Visit Site</Button> */}
-          </Card.Body>
-
+          {/* Veterinarian Site */}
           <a href="">
             <Card.Img
               variant="top"
