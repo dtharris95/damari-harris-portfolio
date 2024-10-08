@@ -23,25 +23,18 @@ const Homepage = () => {
 
         <div className="about-section">
           <h2 className="about-me">About Me</h2>
-
-          {/* <div className="image-container">
-            <img
-              aria-label="On vacation"
-              className="vacation-img"
-              src={vacation}
-            ></img>
-          </div> */}
-
           <div className="info-container">
             <p className="info-text">
               Welcome! I'm Damari, and I'm seeking my first opportunity as a Web
               Developer.
             </p>
+            <hr></hr>
             <p className="info-text">
               In 2023 I earned my Associate of Applied Sciences in Computer
               Science from Columbus State Community College, specializing in Web
               Development.
             </p>
+            <hr></hr>
             <p className="info-text">
               I have enjoyed my 5 years in my current role with Amazon. Now, I
               look forward to my next opportunity in the field of Web and
@@ -83,11 +76,13 @@ const Homepage = () => {
               my Bachelor of Science in Education, majored in Sport Industry. Go
               Bucks!
             </p>
+            <hr></hr>
             <p className="info-text">
               I have officiated a wedding! My best friend got married in Hawaii
               in May 2024, and bestowed the honor upon me of asking to be his
               officiant!
             </p>
+            <hr></hr>
             <p className="info-text">
               I have been very fortunate to travel abroad - I have been to the
               Bahamas and the Cayman Islands! I look forward to seeing where my
@@ -97,14 +92,8 @@ const Homepage = () => {
         </div>
 
         <div className="project-section">
-          <h2 className="project-heading">Projects</h2>
           <Cards />
         </div>
-
-        {/* <h2 className="project-heading">Projects</h2>
-        <div>
-          <Cards />
-        </div> */}
       </div>
     </div>
   );
