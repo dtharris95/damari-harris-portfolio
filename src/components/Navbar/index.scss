@@ -51,7 +51,7 @@ body {
 }
 
 .nav-links {
-    
+    text-align: center;
 }
 
 // Mobile Phone
@@ -72,7 +72,7 @@ body {
             list-style: none;
             // display: flex;
             gap: 2px;
-            width: 50%;
+            width: 51%;
         }
     }
 
@@ -81,6 +81,7 @@ body {
         padding-top: 12%;
         margin: auto;
         padding-bottom: 2%;
+        display: grid;
     }
 
     .nav-links {

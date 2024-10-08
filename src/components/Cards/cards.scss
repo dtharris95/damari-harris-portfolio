@@ -17,6 +17,20 @@
     justify-content: center;
 }
 
+.project-heading {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 56px;
+}
+
+.project-subheading {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 20px;
+}
+
 .project-images {
     transition: transform 0.3s ease-in-out;
 }
@@ -47,6 +61,7 @@
         grid-template-columns: auto;
         text-align: center;
         justify-content: center;
+        padding: 30px;
     }
 
     .project-images {
