@@ -10,7 +10,7 @@ const Homepage = () => {
     <div className="flex-container">
       <div className="container-home">
         <div className="header-container">
-          <h1 className="main-header">Hey, I'm Damari</h1>
+          <h1 className="main-header">Hey, I'm Damari!</h1>
         </div>
 
         <div className="image-container">
@@ -25,7 +25,7 @@ const Homepage = () => {
           <h2 className="about-me">About Me</h2>
           <div className="info-container">
             <p className="info-text">
-              Welcome! I'm Damari, and I'm seeking my first opportunity as a Web
+              I'm Damari, and I'm seeking my first opportunity as a Web
               Developer.
             </p>
             <hr></hr>
@@ -57,14 +57,16 @@ const Homepage = () => {
         <div className="skills-section">
           <h2 className="skills-heading">Skills</h2>
           <div className="skill-list">
-            <li className="skills-text">JAVASCRIPT</li>
+            <li className="skills-text">JavaScript</li>
+            <li className="skills-text">React</li>
             <li className="skills-text">HTML</li>
-            <li className="skills-text">C#</li>
-            <li className="skills-text">GIT</li>
-            <li className="skills-text">REACT</li>
             <li className="skills-text">CSS</li>
-            <li className="skills-text">.NET</li>
-            <li className="skills-text">BOOTSTRAP</li>
+            {/* <li className="skills-text">C#</li> */}
+            <li className="skills-text">Git</li>
+            {/* <li className="skills-text">.NET</li> */}
+            <li className="skills-text">Bootstrap</li>
+            <li className="skills-text">WordPress</li>
+            <li className="skills-text">jQuery</li>
           </div>
         </div>
 
