@@ -1,4 +1,3 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./cards.scss";
 import comingSoon from "../../assets/images/comingSoon.png";
@@ -30,7 +29,7 @@ function BasicExample() {
           </Card.Body>
 
           {/* Hinge To Harris - https://hingetoharris.com */}
-          <a href="">
+          <a>
             <Card.Img
               variant="top"
               className="project-images"
@@ -49,7 +48,7 @@ function BasicExample() {
           </Card.Body>
 
           {/* Budget Builder */}
-          <a href="">
+          <a>
             <Card.Img
               variant="top"
               className="project-images"
@@ -68,7 +67,7 @@ function BasicExample() {
           </Card.Body>
 
           {/* Veterinarian Site */}
-          <a href="">
+          <a>
             <Card.Img
               variant="top"
               className="project-images"
