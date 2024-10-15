@@ -3,7 +3,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .container-home {
@@ -15,7 +16,7 @@ body {
 .main-header {
     text-align: center;
     font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     font-weight: 800;
     font-size: 105px;
 }
@@ -31,7 +32,7 @@ body {
     justify-content: center;
 }
 
-.about-section, .skills-section, .facts-section, .project-section {
+.about-section, .skills-section, .facts-section, .project-section, .service-section {
     padding-bottom: 15px;
     text-align: center;
 }
@@ -46,20 +47,34 @@ body {
     padding: 50px;
 }
 
-.facts-container, .info-container {
+.facts-container {
+    padding: 50px;
+    border: white 2px solid;
+    background-color: tan;
+    border-radius: 75px;
+}
+
+.info-container, .service-container {
     padding: 50px;
     border: white 2px solid;
     background-color: lightgray;
     border-radius: 75px;
 }
 
-.about-me, .facts-heading, .project-heading, .skills-heading {
+.about-me, .facts-heading, .project-heading, .skills-heading, .service-heading {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     // font-weight: lighter;
     text-align: center;
     font-size: 64px;
+}
+
+.service-subheading {
+    font-size: 45px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
 }
 
 .info-text {
@@ -99,6 +114,10 @@ body {
 
 .vacation-img {
     border-radius: 25px;
+}
+
+.email-link {
+    color: black;
 }
 
 // p {

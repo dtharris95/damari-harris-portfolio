@@ -70,25 +70,56 @@ const Homepage = () => {
           </div>
         </div>
 
+        <div className="service-section">
+          <h2 className="service-heading">What I Do</h2>
+          <div className="service-container">
+            <h3 className="service-subheading">
+              <u>Website Developer</u>
+            </h3>
+            <p className="info-text">
+              With a passion for crafting intiutive, user-friendly websites, I
+              specialize in creating responsive web solutions leveraging modern
+              technologies. Whether you need a brand new website or a revamp of
+              your current one, I'm happy to help bring your vision to life!
+            </p>
+            <h3 className="service-subheading">
+              <u>Website Hosting</u>
+            </h3>
+            <p className="info-text">
+              Through providing reliable web hosting services that fit the needs
+              of your business, I ensure your website stays online and performs
+              at its best for positive client and user experiences.
+            </p>
+            {/* <hr></hr> */}
+            <br></br>
+            <p className="info-text">
+              For any freelance inquiries, feel free to reach out{" "}
+              <a className="email-link" href="mailto:dharris.webdev@gmail.com">
+                <b>here!</b>
+              </a>
+            </p>
+          </div>
+        </div>
+
         <div className="facts-section">
           <h2 className="facts-heading">Fun Facts!</h2>
           <div className="facts-container">
             <p className="info-text">
-              I am a proud 2018 graduate of The Ohio State University - earned
-              my Bachelor of Science in Education, majored in Sport Industry. Go
-              Bucks!
+              I am a proud 2018 graduate of <b>The Ohio State University</b> -
+              earned my Bachelor of Science in Education, majored in Sport
+              Industry. <b>Go Bucks!</b>
             </p>
             <hr></hr>
             <p className="info-text">
-              I have officiated a wedding! My best friend got married in Hawaii
-              in May 2024, and bestowed the honor upon me of asking to be his
-              officiant!
+              <b>I have officiated a wedding!</b> My best friend got married in
+              Hawaii in May 2024, and bestowed the honor upon me of asking to be
+              his officiant!
             </p>
             <hr></hr>
             <p className="info-text">
-              I have been very fortunate to travel abroad - I have been to the
-              Bahamas and the Cayman Islands! I look forward to seeing where my
-              future travels will take me.
+              I have been very fortunate to travel abroad - I have been to the{" "}
+              <b>Bahamas</b> and the <b>Cayman Islands!</b> I look forward to
+              seeing where my future travels will take me.
             </p>
           </div>
         </div>

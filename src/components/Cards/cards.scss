@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
-    background-color: tan;
+    background-color: lightgray;
     padding: 50px;
     border-radius: 75px;
 }
@@ -38,6 +38,7 @@
 
 .project-images {
     transition: transform 0.3s ease-in-out;
+    border-radius: 5%;
 }
 
 .project-images:hover {
