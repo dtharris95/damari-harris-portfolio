@@ -4,6 +4,7 @@ import "animate.css";
 import vacation from "../../assets/images/vacation.png";
 import DamariHarrisResume2024 from "../../assets/resume/DamariHarrisResume2024.pdf";
 import Cards from "../Cards/cards";
+// import Stripe from "../Stripe/stripe";
 
 const Homepage = () => {
   return (
@@ -127,6 +128,9 @@ const Homepage = () => {
         <div className="project-section">
           <Cards />
         </div>
+        {/* <div>
+          <Stripe />
+        </div> */}
       </div>
     </div>
   );
