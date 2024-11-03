@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
-    background-color: lightgray;
+    background-color: tan;
     padding: 50px;
     border-radius: 75px;
 }
@@ -50,10 +50,6 @@
     margin: auto;
     align-items: center;
     padding: 25px;
-}
-
-.card-skills:hover {
-    color: white;
 }
 
 @media screen and (max-width: 576px) {

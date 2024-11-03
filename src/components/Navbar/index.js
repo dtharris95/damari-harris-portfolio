@@ -10,42 +10,46 @@ const Navbar = () => {
       <ul>
         {/* <div className="hello"> */}
         <li className="nav-links">
-          LinkedIn
+          {/* LinkedIn */}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/damari-harris/"
           >
+            LinkedIn&nbsp;
             <FontAwesomeIcon icon={faLinkedin} color="black" />
           </a>
         </li>
         <li className="nav-links">
-          GitHub
+          {/* GitHub */}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://github.com/dtharris95"
           >
+            GitHub&nbsp;
             <FontAwesomeIcon icon={faGithub} color="black" />
           </a>
         </li>
         <li className="nav-links">
-          Employers
+          {/* Employers */}
           <a
             target="_blank"
             rel="noreferrer"
             href="mailto:dtharris95@gmail.com"
           >
+            Employers&nbsp;
             <FontAwesomeIcon icon={faBriefcase} color="black" />
           </a>
         </li>
         <li className="nav-links">
-          Freelance
+          {/* Freelance */}
           <a
             target="_blank"
             rel="noreferrer"
             href="mailto:dharris.webdev@gmail.com"
           >
+            Freelance&nbsp;
             <FontAwesomeIcon icon={faEnvelope} color="black" />
           </a>
         </li>

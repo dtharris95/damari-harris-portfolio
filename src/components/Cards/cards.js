@@ -6,15 +6,23 @@ import HKTIcon from "../../assets/images/HKTIcon.png";
 function BasicExample() {
   return (
     <>
-      <h2 className="project-heading">Projects</h2>
-      <p className="project-subheading">
+      <h2 className="project-heading">
+        <u>Projects</u>
+      </h2>
+      {/* <p className="project-subheading">
         (Click on an image to see the project!)
-      </p>
+      </p> */}
       <div className="flex-container">
         <div className="card-container">
           {/* Harris Kitchen Table */}
-          <a href="https://harriskitchentable.com">
-            <Card.Img variant="top" className="project-images" src={HKTIcon} />
+          {/* <a href="https://harriskitchentable.com"> */}
+          <a>
+            <Card.Img
+              variant="top"
+              className="project-images"
+              src={comingSoon}
+              tabIndex={0}
+            />
           </a>
           <Card.Body>
             <Card.Title className="card-title">Harris Kitchen Table</Card.Title>
@@ -34,6 +42,7 @@ function BasicExample() {
               variant="top"
               className="project-images"
               src={comingSoon}
+              tabIndex={0}
             />
           </a>
           <Card.Body>
@@ -53,6 +62,7 @@ function BasicExample() {
               variant="top"
               className="project-images"
               src={comingSoon}
+              tabIndex={0}
             />
           </a>
           <Card.Body>
@@ -72,6 +82,7 @@ function BasicExample() {
               variant="top"
               className="project-images"
               src={comingSoon}
+              tabIndex={0}
             />
           </a>
           <Card.Body>

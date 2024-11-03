@@ -18,7 +18,7 @@ body {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
-    font-size: 105px;
+    font-size: 60px;
 }
 
 .header-container {
@@ -32,14 +32,25 @@ body {
     justify-content: center;
 }
 
+.container-one {
+    display: grid;
+    grid-template-columns: auto auto;
+    // align-items: center;
+    // padding: 10px;
+}
+
 .about-section, .skills-section, .facts-section, .project-section, .service-section {
     padding-bottom: 15px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    // padding: 50px;
+    // margin: 20px;
 }
 
 .skill-list {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     list-style: none;
     border: white 2px solid;
     border-radius: 75px;
@@ -48,14 +59,14 @@ body {
 }
 
 .facts-container {
-    padding: 50px;
+    padding: 25px;
     border: white 2px solid;
     background-color: tan;
     border-radius: 75px;
 }
 
 .info-container, .service-container {
-    padding: 50px;
+    padding: 25px;
     border: white 2px solid;
     background-color: lightgray;
     border-radius: 75px;
@@ -67,18 +78,19 @@ body {
     font-weight: 800;
     // font-weight: lighter;
     text-align: center;
-    font-size: 64px;
+    font-size: 47px;
 }
 
 .service-subheading {
-    font-size: 45px;
+    font-size: 40px;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
 }
 
 .info-text {
-    font-size: 30px;
+    text-align: left;
+    font-size: 27px;
     padding: 5px;
 }
 
@@ -87,27 +99,27 @@ body {
     font-optical-sizing: auto;
     font-weight: 800;
     font-size: 30px;
-    padding: 20px;
+    padding: 15px;
 }
 
-.skills-text:hover {
-    color: white;
-}
+// .skills-text:hover {
+//     color: white;
+// }
 
 .resume-link {
-    font-size: 35px;
+    font-size: 30px;
     font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
     font-weight: 800;
     color: black;
 
     &:hover {
-        color: white;
+        color: blue;
     }
 }
 
 .image-container {
-    // padding-bottom: 15px;
+    padding-bottom: 5%;
     text-align: center;
     width: 100%;
 }
@@ -118,6 +130,10 @@ body {
 
 .email-link {
     color: black;
+
+    &:hover {
+        color: blue;
+    }
 }
 
 // p {
@@ -153,6 +169,12 @@ ul {
         margin: 0;
     }
 
+    .container-one {
+        display: grid;
+        grid-template-columns: auto;
+        // padding: -50px;
+    }
+
     .flex-container {
         display: flex;
         flex-wrap: nowrap;
@@ -165,8 +187,8 @@ ul {
     }
 
     .header-container {
-        padding-top: 10%;
-        padding-bottom: 5%;
+        // padding-top: 10%;
+        // padding-bottom: 5%;
     }
 
     .container-home {
@@ -176,6 +198,14 @@ ul {
 
     .about-section, .skills-section, .facts-section, .project-section {
         padding-bottom: 15px;
+    }
+
+    .info-container, .skill-list {
+        background-color: tan;
+    }
+    
+    .service-container, .facts-container {
+        background-color: lightgray;
     }
 
     .about-me, .facts-heading, .project-heading, .skills-heading {
@@ -190,7 +220,7 @@ ul {
         margin: auto;
         justify-content: center;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 
     .skills-text {
@@ -208,6 +238,7 @@ ul {
         grid-template-columns: auto;
         margin: auto;
         justify-content: center;
+        padding-bottom: 15%;
     }
 }
 
