@@ -81,7 +81,7 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="container-one">
+        <div className="container-two">
           <div className="skills-section">
             <h2 className="skills-heading">
               <u>Skills</u>

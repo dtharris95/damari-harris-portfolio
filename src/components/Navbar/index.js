@@ -8,7 +8,6 @@ const Navbar = () => {
     <nav className="navbar">
       <h1 className="nav-title">Damari Harris</h1>
       <ul>
-        {/* <div className="hello"> */}
         <li className="nav-links">
           {/* LinkedIn */}
           <a
@@ -53,12 +52,6 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faEnvelope} color="black" />
           </a>
         </li>
-        {/* </div> */}
-        {/* <li>
-                <a target='_blank' rel='noreferrer' href="" aria-label="">
-                    <FontAwesomeIcon icon={faContactBook} color="black" />
-                </a>
-            </li> */}
       </ul>
     </nav>
   );

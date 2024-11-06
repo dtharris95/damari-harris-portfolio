@@ -32,7 +32,7 @@ body {
     justify-content: center;
 }
 
-.container-one {
+.container-one, .container-two {
     display: grid;
     grid-template-columns: auto auto;
     // align-items: center;
@@ -76,7 +76,6 @@ body {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
-    // font-weight: lighter;
     text-align: center;
     font-size: 47px;
 }
@@ -101,10 +100,6 @@ body {
     font-size: 30px;
     padding: 15px;
 }
-
-// .skills-text:hover {
-//     color: white;
-// }
 
 .resume-link {
     font-size: 30px;
@@ -135,24 +130,6 @@ body {
         color: blue;
     }
 }
-
-// p {
-//     text-align: center;
-//     animation-name: slidein;
-//     animation-duration: 3s;
-// }
-
-// @keyframes slidein {
-//     from {
-//         margin-left: 100%;
-//         width: 100%;
-//     }
-
-//     to {
-//         margin-left: 0%;
-//         width: 100%;
-//     }
-// }
 
 ul {
     li {
@@ -245,8 +222,22 @@ ul {
 // Tablet
 @media screen and (max-width: 835px) {
     .container-home {
-        padding: 0 35%;
-        width: 85%;
+        // padding: 0 35%;
+        // width: 85%;
+    }
+
+    .container-two {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .skill-list {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .info-container, .service-container {
+        
     }
 }
 
