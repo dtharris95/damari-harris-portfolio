@@ -141,12 +141,13 @@ ul {
         }
     }
 
+// Extra Small Devices
 @media screen and (max-width: 576px) {
     body {
         margin: 0;
     }
 
-    .container-one {
+    .container-one, .container-two {
         display: grid;
         grid-template-columns: auto;
         // padding: -50px;
@@ -220,7 +221,7 @@ ul {
 }
 
 // Tablet
-@media screen and (max-width: 835px) {
+@media screen and (min-width: 577px) and (max-width: 835px) {
     .container-home {
         // padding: 0 35%;
         // width: 85%;
@@ -242,7 +243,7 @@ ul {
 }
 
 // Laptop
-@media screen and (max-width: 1280px) {
+@media screen and (mix-width: 836px) and (max-width: 1280px) {
     .container-home {
         padding: 0 5%;
         width: 85%;

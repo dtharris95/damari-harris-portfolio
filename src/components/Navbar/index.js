@@ -13,7 +13,7 @@ const Navbar = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/damari-harris/"
+            href="https://www.linkedin.com/in/damariharris/"
           >
             LinkedIn&nbsp;
             <FontAwesomeIcon icon={faLinkedin} color="black" />

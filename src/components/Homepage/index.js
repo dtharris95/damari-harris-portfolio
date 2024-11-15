@@ -135,29 +135,6 @@ const Homepage = () => {
           </div>
         </div>
 
-        {/* <div className="facts-section">
-          <h2 className="facts-heading">Fun Facts!</h2>
-          <div className="facts-container">
-            <p className="info-text">
-              I am a proud 2018 graduate of <b>The Ohio State University</b> -
-              earned my Bachelor of Science in Education, majored in Sport
-              Industry. <b>Go Bucks!</b>
-            </p>
-            <hr></hr>
-            <p className="info-text">
-              I have <b>officiated a wedding!</b> My best friend got married in
-              Hawaii in May 2024, and bestowed the honor upon me of asking to be
-              his officiant!
-            </p>
-            <hr></hr>
-            <p className="info-text">
-              I have been very fortunate to travel abroad - I have been to the{" "}
-              <b>Bahamas</b> and the <b>Cayman Islands!</b> I look forward to
-              seeing where my future travels will take me.
-            </p>
-          </div>
-        </div> */}
-
         <div className="project-section">
           <Cards />
         </div>
