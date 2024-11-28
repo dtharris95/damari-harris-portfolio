@@ -16,7 +16,9 @@ body {
     }
 
     ul {
-        padding-top: 0.5%;
+        // padding-top: 1.3%;
+        padding-right: 15px;
+        padding-top: 1.1%;
         position: relative;
         margin: auto;
         text-align: right;
@@ -28,11 +30,12 @@ body {
 
         li {
             align-items: right;
+            
             a {
-                font-size: 20px;
+                font-size: 15px;
                 padding: 7px;
                 margin: 7px;
-                // margin-right: 0.5%;
+                text-decoration: none;
         
                 &:hover svg {
                     color: white;
@@ -45,16 +48,20 @@ body {
 .nav-title {
     font-size: 35px;
     float: left;
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
-    padding-left: 1%;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    padding-left: 20px;
+    // padding-top: 15px;
 }
 
 .nav-links {
     text-align: center;
+    font-weight: bold;
 }
 
-// Mobile Phone
+// Extra Small Devices
 @media screen and (max-width: 576px) {
     body {
         // margin: 0;
@@ -63,43 +70,59 @@ body {
     .navbar {
         overflow: hidden;
         background: tan;
-        // display: grid;
-        // grid-template-columns: auto;
 
         ul {
             margin: auto;
             text-align: left;
             list-style: none;
-            // display: flex;
-            gap: 2px;
-            width: 51%;
+            gap: 0px;
+            display: flex;
         }
     }
 
     .nav-title {
-        font-size: 25px;
-        padding-top: 12%;
+        font-size: 20px;
         margin: auto;
-        padding-bottom: 2%;
-        display: grid;
+        padding: auto;
+        // width: 25%;
+        padding-top: 20px;
+        text-align: center;
     }
 
     .nav-links {
         font-size: 10px;
+        text-align: right;
     }
 
 }
 
 // Tablet
-@media screen and (max-width: 835px) {
+@media screen and (min-width: 577px) and (max-width: 835px) {
     .nav-links {
-        padding-top: 4%;
+        padding-bottom: 3%;
+        
+    }
+
+    .nav-title {
+        padding-top: 15px;
     }
 }
 
+@media screen and (max-width: 991.98px) {
+
+}
+
 // Laptop
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1199.98px) {
     .nav-links {
-        padding-top: 4%;
+        padding-top: 12px;
     }
+
+    .nav-title {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1399.98px) {
+
 }
