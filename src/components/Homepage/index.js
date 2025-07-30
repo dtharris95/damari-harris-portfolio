@@ -2,7 +2,7 @@ import {} from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import "animate.css";
 import vacation from "../../assets/images/vacation.png";
-import DamariHarrisResume2024 from "../../assets/resume/DamariHarrisResume2024.pdf";
+import DamariHarrisDevResume2025 from "../../assets/resume/DamariHarrisDevResume2025.pdf";
 import Cards from "../Cards/cards";
 // import Stripe from "../Stripe/stripe";
 
@@ -31,9 +31,7 @@ const Homepage = () => {
             </h2>
             <div className="info-container">
               <p className="info-text">
-                I'm Damari, and I am eager to begin my career as a Web Developer
-                in the Cleveland, OH area. I specialize in frontend web
-                development, but am continuosly expanding my skillset.
+                I'm Damari, and I am eager to begin my career as a Web Developer. I specialize in frontend web development, but am continuosly expanding my skillset.
               </p>
               <hr></hr>
               <p className="info-text" tabIndex={0}>
@@ -43,12 +41,12 @@ const Homepage = () => {
               </p>
               <hr></hr>
               <p className="info-text">
-                I have spent the last five years thriving in my role at Amazon
+                I have spent the last six years thriving in my role at Amazon
                 and am now excited to embark on my next chapter in Web
                 Development.
               </p>
               <p className="info-text">
-                <a className="resume-link" href={DamariHarrisResume2024}>
+                <a className="resume-link" target="_blank" href={DamariHarrisDevResume2025}>
                   Check Out My Resume!
                 </a>
               </p>
@@ -97,6 +95,8 @@ const Homepage = () => {
               <li className="skills-text">Bootstrap</li>
               <li className="skills-text">WordPress</li>
               <li className="skills-text">jQuery</li>
+              <li className="skills-text">Visual Studio Code</li>
+              <li className="skills-text">Office Suite</li>
             </div>
           </div>
 
