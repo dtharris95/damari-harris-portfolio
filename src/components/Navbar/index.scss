@@ -9,97 +9,124 @@ body {
 
 .navbar {
     overflow: hidden;
-    background: tan;
+    background: #B6B6B6;
+    display: flex;
+    align-items: center;
 
-    icon {
-        float: right;
-    }
+    // ul {
+    //     list-style: none;
+    //     display: grid;
+    //     grid-template-columns: auto auto auto auto;
+    //     gap: 8px;
+    //     float: right;
 
-    ul {
-        padding-top: 0.5%;
-        position: relative;
-        margin: auto;
-        text-align: right;
-        list-style: none;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 16px;
-        float: right;
-
-        li {
-            align-items: right;
-            a {
-                font-size: 20px;
-                padding: 7px;
-                margin: 7px;
-                // margin-right: 0.5%;
+    //     li {
+    //         align-items: right;
+            
+    //         a {
+    //             font-size: 15px;
+    //             padding: 7px;
+    //             margin: 7px;
+    //             text-decoration: none;
         
-                &:hover svg {
-                    color: white;
-                }
+    //             &:hover, &:hover svg {
+    //                 color: white;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+.nav-title {
+    font-size: 35px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    padding-left: 2%;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+    float: right;
+
+    li {
+        align-items: right;
+        
+        a {
+            font-size: 15px;
+            padding: 7px;
+            margin: 7px;
+            text-decoration: none;
+    
+            &:hover, &:hover svg {
+                color: white;
             }
         }
     }
 }
 
-.nav-title {
-    font-size: 35px;
-    float: left;
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
-    padding-left: 1%;
-}
-
 .nav-links {
-    text-align: center;
+    // padding-right: 1%;
+    font-weight: bold;
 }
 
-// Mobile Phone
+// Extra Small Devices
 @media screen and (max-width: 576px) {
-    body {
-        // margin: 0;
-    }
-
     .navbar {
         overflow: hidden;
-        background: tan;
-        // display: grid;
-        // grid-template-columns: auto;
-
-        ul {
-            margin: auto;
-            text-align: left;
-            list-style: none;
-            // display: flex;
-            gap: 2px;
-            width: 51%;
-        }
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-title {
+        font-size: 20px;
     }
 
-    .nav-title {
-        font-size: 25px;
-        padding-top: 12%;
-        margin: auto;
-        padding-bottom: 2%;
+    ul {
         display: grid;
+        grid-template-columns: auto auto;
     }
 
     .nav-links {
-        font-size: 10px;
+        text-align: right;
     }
 
+    .links {
+        font-size: 12px;
+    }
+
+    .nav-icons {
+        display: none;
+    }
 }
 
 // Tablet
-@media screen and (max-width: 835px) {
+@media screen and (min-width: 577px) and (max-width: 835px) {
     .nav-links {
-        padding-top: 4%;
+        
+    }
+
+    .nav-title {
     }
 }
 
+@media screen and (max-width: 991.98px) {
+
+}
+
 // Laptop
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1199.98px) {
     .nav-links {
-        padding-top: 4%;
     }
+
+    .nav-title {
+    }
+}
+
+@media screen and (max-width: 1399.98px) {
+
 }

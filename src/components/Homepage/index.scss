@@ -3,7 +3,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .container-home {
@@ -14,8 +15,10 @@ body {
 
 .main-header {
     text-align: center;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 105px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 60px;
 }
 
 .header-container {
@@ -29,14 +32,25 @@ body {
     justify-content: center;
 }
 
-.about-section, .skills-section, .facts-section, .project-section {
+.container-one, .container-two {
+    display: grid;
+    grid-template-columns: auto auto;
+    // align-items: center;
+    // padding: 10px;
+}
+
+.about-section, .skills-section, .facts-section, .project-section, .service-section {
     padding-bottom: 15px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    // padding: 50px;
+    // margin: 20px;
 }
 
 .skill-list {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     list-style: none;
     border: white 2px solid;
     border-radius: 75px;
@@ -44,53 +58,63 @@ body {
     padding: 50px;
 }
 
-.facts-container, .info-container {
-    padding: 50px;
+.facts-container {
+    padding: 25px;
+    border: white 2px solid;
+    background-color: tan;
+    border-radius: 75px;
+}
+
+.info-container, .service-container {
+    padding: 25px;
     border: white 2px solid;
     background-color: lightgray;
     border-radius: 75px;
 }
 
-.about-me, .facts-heading, .project-heading, .skills-heading {
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
+.about-me, .facts-heading, .project-heading, .skills-heading, .service-heading {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     text-align: center;
-    font-size: 56px;
+    font-size: 47px;
+}
+
+.service-subheading {
+    font-size: 40px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
 }
 
 .info-text {
-    font-size: 28px;
+    text-align: left;
+    font-size: 27px;
     padding: 5px;
 }
 
 .skills-text {
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 25px;
-    padding: 20px;
-}
-
-.skills-text:hover {
-    color: white;
-}
-
-.intro-text {
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: lighter;
-    font-size: 45px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 15px;
 }
 
 .resume-link {
-    font-size: 35px;
-    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     color: black;
 
     &:hover {
-        color: white;
+        color: blue;
     }
 }
 
 .image-container {
-    // padding-bottom: 15px;
+    padding-bottom: 5%;
     text-align: center;
     width: 100%;
 }
@@ -99,23 +123,13 @@ body {
     border-radius: 25px;
 }
 
-// p {
-//     text-align: center;
-//     animation-name: slidein;
-//     animation-duration: 3s;
-// }
+.email-link {
+    color: black;
 
-// @keyframes slidein {
-//     from {
-//         margin-left: 100%;
-//         width: 100%;
-//     }
-
-//     to {
-//         margin-left: 0%;
-//         width: 100%;
-//     }
-// }
+    &:hover {
+        color: blue;
+    }
+}
 
 ul {
     li {
@@ -127,9 +141,16 @@ ul {
         }
     }
 
+// Extra Small Devices
 @media screen and (max-width: 576px) {
     body {
         margin: 0;
+    }
+
+    .container-one, .container-two {
+        display: grid;
+        grid-template-columns: auto;
+        // padding: -50px;
     }
 
     .flex-container {
@@ -139,13 +160,13 @@ ul {
     }
 
     .main-header {
-        font-size: 40px;
+        font-size: 55px;
         align-items: center;
     }
 
     .header-container {
-        padding-top: 10%;
-        padding-bottom: 5%;
+        // padding-top: 10%;
+        // padding-bottom: 5%;
     }
 
     .container-home {
@@ -155,6 +176,14 @@ ul {
 
     .about-section, .skills-section, .facts-section, .project-section {
         padding-bottom: 15px;
+    }
+
+    .info-container, .skill-list {
+        background-color: tan;
+    }
+    
+    .service-container, .facts-container {
+        background-color: lightgray;
     }
 
     .about-me, .facts-heading, .project-heading, .skills-heading {
@@ -169,7 +198,7 @@ ul {
         margin: auto;
         justify-content: center;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 
     .skills-text {
@@ -187,21 +216,40 @@ ul {
         grid-template-columns: auto;
         margin: auto;
         justify-content: center;
+        padding-bottom: 15%;
     }
 }
 
 // Tablet
-@media screen and (max-width: 835px) {
+@media screen and (min-width: 577px) and (max-width: 835px) {
     .container-home {
-        padding: 0 35%;
-        width: 85%;
+        // padding: 0 35%;
+        // width: 85%;
+    }
+
+    .container-two {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .skill-list {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .info-container, .service-container {
+        
     }
 }
 
 // Laptop
-@media screen and (max-width: 1280px) {
+@media screen and (mix-width: 836px) and (max-width: 1280px) {
     .container-home {
         padding: 0 5%;
-        width: 90%;
+        width: 85%;
+    }
+
+    .skills-text {
+        font-size: 20px;
     }
 }
