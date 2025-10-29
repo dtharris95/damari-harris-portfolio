@@ -15,14 +15,15 @@ function BasicExample() {
       <div className="flex-container">
         <div className="card-container">
           {/* Harris Kitchen Table */}
-          {/* <a href="https://harriskitchentable.com"> */}
-          <a>
-            <Card.Img
-              variant="top"
-              className="project-images"
-              src={comingSoon}
-              tabIndex={0}
-            />
+          <a href="https://harriskitchentable.com" target="_blank">
+            <a>
+              <Card.Img
+                variant="top"
+                className="project-images"
+                src={HKTIcon}
+                tabIndex={0}
+              />
+            </a>
           </a>
           <Card.Body>
             <Card.Title className="card-title">Harris Kitchen Table</Card.Title>
