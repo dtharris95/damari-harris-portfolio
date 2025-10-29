@@ -9,101 +9,108 @@ body {
 
 .navbar {
     overflow: hidden;
-    background: tan;
+    background: #B6B6B6;
+    display: flex;
+    align-items: center;
 
-    icon {
-        float: right;
-    }
+    // ul {
+    //     list-style: none;
+    //     display: grid;
+    //     grid-template-columns: auto auto auto auto;
+    //     gap: 8px;
+    //     float: right;
 
-    ul {
-        // padding-top: 1.3%;
-        padding-right: 15px;
-        padding-top: 1.1%;
-        position: relative;
-        margin: auto;
-        text-align: right;
-        list-style: none;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 16px;
-        float: right;
-
-        li {
-            align-items: right;
+    //     li {
+    //         align-items: right;
             
-            a {
-                font-size: 15px;
-                padding: 7px;
-                margin: 7px;
-                text-decoration: none;
+    //         a {
+    //             font-size: 15px;
+    //             padding: 7px;
+    //             margin: 7px;
+    //             text-decoration: none;
         
-                &:hover svg {
-                    color: white;
-                }
+    //             &:hover, &:hover svg {
+    //                 color: white;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+.nav-title {
+    font-size: 35px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    padding-left: 2%;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+    float: right;
+
+    li {
+        align-items: right;
+        
+        a {
+            font-size: 15px;
+            padding: 7px;
+            margin: 7px;
+            text-decoration: none;
+    
+            &:hover, &:hover svg {
+                color: white;
             }
         }
     }
 }
 
-.nav-title {
-    font-size: 35px;
-    float: left;
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    padding-left: 20px;
-    // padding-top: 15px;
-}
-
 .nav-links {
-    text-align: center;
+    // padding-right: 1%;
     font-weight: bold;
 }
 
 // Extra Small Devices
-@media screen and (max-width: 575.98px) {
-    body {
-        // margin: 0;
-    }
-
+@media screen and (max-width: 576px) {
     .navbar {
         overflow: hidden;
-        background: tan;
-
-        ul {
-            margin: auto;
-            text-align: left;
-            list-style: none;
-            gap: 2px;
-            display: flex;
-        }
+        display: flex;
+        align-items: center;
     }
-
+    
     .nav-title {
         font-size: 20px;
-        margin: auto;
-        padding: auto;
-        // width: 25%;
-        padding-top: 20px;
-        text-align: center;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .nav-links {
-        font-size: 10px;
+        text-align: right;
     }
 
+    .links {
+        font-size: 12px;
+    }
+
+    .nav-icons {
+        display: none;
+    }
 }
 
-// Small Devices
-@media screen and (max-width: 767.98px) {
+// Tablet
+@media screen and (min-width: 577px) and (max-width: 835px) {
     .nav-links {
-        padding-bottom: 3%;
         
     }
 
     .nav-title {
-        padding-top: 15px;
     }
 }
 
@@ -114,11 +121,9 @@ body {
 // Laptop
 @media screen and (max-width: 1199.98px) {
     .nav-links {
-        padding-top: 12px;
     }
 
     .nav-title {
-        padding-top: 15px;
     }
 }
 

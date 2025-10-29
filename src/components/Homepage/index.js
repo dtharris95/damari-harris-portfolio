@@ -2,7 +2,7 @@ import {} from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 import "animate.css";
 import vacation from "../../assets/images/vacation.png";
-import DamariHarrisResume2024 from "../../assets/resume/DamariHarrisResume2024.pdf";
+import DamariHarrisDevResume2025 from "../../assets/resume/DamariHarrisDevResume2025.pdf";
 import Cards from "../Cards/cards";
 // import Stripe from "../Stripe/stripe";
 
@@ -43,12 +43,12 @@ const Homepage = () => {
               </p>
               <hr></hr>
               <p className="info-text">
-                I have spent the last five years thriving in my role at Amazon
+                I have spent the last six years thriving in my role at Amazon
                 and am now excited to embark on my next chapter in Web
                 Development.
               </p>
               <p className="info-text">
-                <a className="resume-link" href={DamariHarrisResume2024}>
+                <a className="resume-link" target="_blank" href={DamariHarrisDevResume2025}>
                   Check Out My Resume!
                 </a>
               </p>
@@ -81,7 +81,7 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="container-one">
+        <div className="container-two">
           <div className="skills-section">
             <h2 className="skills-heading">
               <u>Skills</u>
@@ -97,6 +97,8 @@ const Homepage = () => {
               <li className="skills-text">Bootstrap</li>
               <li className="skills-text">WordPress</li>
               <li className="skills-text">jQuery</li>
+              <li className="skills-text">Visual Studio Code</li>
+              <li className="skills-text">Office Suite</li>
             </div>
           </div>
 
@@ -134,29 +136,6 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="facts-section">
-          <h2 className="facts-heading">Fun Facts!</h2>
-          <div className="facts-container">
-            <p className="info-text">
-              I am a proud 2018 graduate of <b>The Ohio State University</b> -
-              earned my Bachelor of Science in Education, majored in Sport
-              Industry. <b>Go Bucks!</b>
-            </p>
-            <hr></hr>
-            <p className="info-text">
-              I have <b>officiated a wedding!</b> My best friend got married in
-              Hawaii in May 2024, and bestowed the honor upon me of asking to be
-              his officiant!
-            </p>
-            <hr></hr>
-            <p className="info-text">
-              I have been very fortunate to travel abroad - I have been to the{" "}
-              <b>Bahamas</b> and the <b>Cayman Islands!</b> I look forward to
-              seeing where my future travels will take me.
-            </p>
-          </div>
-        </div> */}
 
         <div className="project-section">
           <Cards />

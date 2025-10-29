@@ -28,8 +28,8 @@ function BasicExample() {
           <Card.Body>
             <Card.Title className="card-title">Harris Kitchen Table</Card.Title>
             <Card.Text className="card-text">
-              Template website serving as proof-of-concept for potential
-              freelance restaurant clients.
+              Full-stack template website serving as proof-of-concept for
+              potential freelance restaurant clients.
             </Card.Text>
             <Card.Text className="card-skills">
               React | JavaScript | HTML | CSS | PocketBase

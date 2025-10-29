@@ -8,57 +8,50 @@ const Navbar = () => {
     <nav className="navbar">
       <h1 className="nav-title">Damari Harris</h1>
       <ul>
-        {/* <div className="hello"> */}
         <li className="nav-links">
           {/* LinkedIn */}
-          <a
+          <a className="links"
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/damari-harris/"
+            href="https://www.linkedin.com/in/damariharris/"
           >
             LinkedIn&nbsp;
-            <FontAwesomeIcon icon={faLinkedin} color="black" />
+            <FontAwesomeIcon className="nav-icons" icon={faLinkedin} color="black" />
           </a>
         </li>
         <li className="nav-links">
           {/* GitHub */}
-          <a
+          <a className="links"
             target="_blank"
             rel="noreferrer"
             href="https://github.com/dtharris95"
           >
             GitHub&nbsp;
-            <FontAwesomeIcon icon={faGithub} color="black" />
+            <FontAwesomeIcon className="nav-icons" icon={faGithub} color="black" />
           </a>
         </li>
         <li className="nav-links">
           {/* Employers */}
-          <a
+          <a className="links"
             target="_blank"
             rel="noreferrer"
             href="mailto:dtharris95@gmail.com"
           >
             Employers&nbsp;
-            <FontAwesomeIcon icon={faBriefcase} color="black" />
+            <FontAwesomeIcon className="nav-icons" icon={faBriefcase} color="black" />
           </a>
         </li>
         <li className="nav-links">
           {/* Freelance */}
-          <a
+          <a className="links"
             target="_blank"
             rel="noreferrer"
             href="mailto:dharris.webdev@gmail.com"
           >
             Freelance&nbsp;
-            <FontAwesomeIcon icon={faEnvelope} color="black" />
+            <FontAwesomeIcon className="nav-icons" icon={faEnvelope} color="black" />
           </a>
         </li>
-        {/* </div> */}
-        {/* <li>
-                <a target='_blank' rel='noreferrer' href="" aria-label="">
-                    <FontAwesomeIcon icon={faContactBook} color="black" />
-                </a>
-            </li> */}
       </ul>
     </nav>
   );
