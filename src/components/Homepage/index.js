@@ -31,7 +31,9 @@ const Homepage = () => {
             </h2>
             <div className="info-container">
               <p className="info-text">
-                I'm Damari, and I am eager to begin my career as a Web Developer. I specialize in frontend web development, but am continuosly expanding my skillset.
+                I'm Damari, and I am eager to begin my career as a Web Developer
+                in the Cleveland, OH area. I specialize in frontend web
+                development, but am continuously expanding my skillset.
               </p>
               <hr></hr>
               <p className="info-text" tabIndex={0}>
